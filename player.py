@@ -31,8 +31,10 @@ class Player:
             dy += speed_cos
            
         
+        
         self.x+=dx
         self.y=dy
+        
         
         if keys[pg.K_LEFT]:
             self.angle-=PLAYER_ROT_SPEED*self.game.delta_time
