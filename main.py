@@ -4,8 +4,6 @@ from settings import *
 from map import *
 from player import *
 
-
-
 class Game:
     def __init__(self):
         pg.init()
@@ -17,6 +15,7 @@ class Game:
     def new_game(self):
         self.map=Map(self)
         self.player=Player(self)
+        
     
     
     def update(self):
@@ -29,6 +28,7 @@ class Game:
         self.screen.fill('black')
         self.map.draw()
         self.player.draw()
+        a=10
         
     def check_events(self):
         for event in pg.event.get():
